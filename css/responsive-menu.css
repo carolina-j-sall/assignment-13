@@ -1,0 +1,16 @@
+.navbar {
+  border: 1px solid blue;
+}
+.header__nav {
+  border: 1px solid green;
+}
+.header__nav-list {
+  list-style: none;
+  border: 1px solid red;
+}
+.header__nav-list-item {
+  border: 1px solid hotpink;
+}
+.header__nav-link {
+  font-size: 18px;
+}
