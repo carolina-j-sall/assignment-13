@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif; 
+  font-size: 18px;
+  background-color: #fff;
+}
+
+/* ------------ codepen modified code ------------ */
+.mobile__navbar-menu {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  background-color: rgba(255, 192, 203, 0.281);
+  border-bottom: 1px solid pink;
+}
+.mobile__navbar-summary {
+  list-style: none;
+}
+.mobile__navbar-burger-menu {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  display: inline-block;
+  cursor: pointer;
+}
+.mobile__navbar-burger-menu:hover {
+  opacity: 70%;
+}
+.mobile__navbar-line {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: hotpink;
+  border-radius: 99px;
+  margin: 8px 0;
+}
+.mobile__toggle-nav {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 101px;
+  background-color: rgba(255, 192, 203, 0.281);
+}
+.mobile__toggle-list {
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.mobile__toggle-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: brown;
+}
+.mobile__toggle-link:hover {
+  color: hotpink;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: hotpink;
+  text-underline-offset: 5px;
+}
+div {
+  position: absolute;
+  top: 300px;
+}
+/* ------------ codepen modified code ------------ */
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: rgba(0, 0, 255, 0.281);
+  }
+  .mobile__toggle-nav {
+    height: 150px;
+  }
+  .mobile__toggle-list {
+    height: 100%;
+    flex-direction: column;
+  }
+  .mobile__toggle-list-item {
+    margin-bottom: 8px;
+  }
+}
